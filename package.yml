@@ -14,5 +14,6 @@ sources:
   - Source/Input/Checkbox.js
   - Source/Input/Radio.js
   - Source/Input/Search.js
+  - Source/Input/Number.js
   - Source/Select.js
   - Source/Textarea.js

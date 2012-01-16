@@ -33,7 +33,20 @@ LSD.Native.Input = new Class({
       }
     },
     inline: null,
-    pseudos: Array.object('form-associated', 'focusable', 'value')
+    pseudos: Array.object('form-associated', 'focusable', 'value'),
+    actions: {
+      delayed: {
+        enable: function() {
+          this.getDelayedValue();
+        }
+      }
+    }
+  },
+  
+  getDelayedValue: function(value) {
+    (function() {
+      this.setValue(this.getRawValue())
+    }).delay(50, this)
   },
   
   applyValue: function(value) {

@@ -46,7 +46,7 @@ LSD.Native.Input = new Class({
   getDelayedValue: function(value) {
     (function() {
       this.setValue(this.getRawValue())
-    }).delay(50, this)
+    }).delay(100, this)
   },
   
   applyValue: function(value) {
